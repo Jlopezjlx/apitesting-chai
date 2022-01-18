@@ -1,0 +1,25 @@
+{
+  "name": "testing-api",
+  "version": "1.0.0",
+  "description": "Api testing project for coreSpaces",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "nyc --check-coverage --lines 75  --functions 75 --branches 50 --reporter=html --reporter=text mocha --exit"
+    },
+  "author": "Jairo",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.4",
+    "nyc": "^15.1.0",
+    "supertest": "^6.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
